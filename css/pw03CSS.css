@@ -1,0 +1,49 @@
+/* Seletor por tag */
+body {
+  background-color: #1e1e1e;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+h1 {
+  color: blueviolet;
+  border: dotted 2px blueviolet;
+}
+
+input,
+select,
+textarea {
+  background-color: yellow;
+  color: black;
+  border: solid 1px black;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* seletor por id */
+
+#btnEnviar {
+  width: 30%;
+  padding: 10px;
+  background-color: hotpink;
+  border-radius: 10px;
+}
+
+/* seletor por apelido */
+.janela {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: 1px #aaa;
+  background-color: rgba(50, 50, 50, 0.5);
+  padding: 20px;
+  height: 75vh;
+}
+
+label {
+  width: 30%;
+  display: inline-table;
+}
