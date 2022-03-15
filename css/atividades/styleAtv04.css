@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+body {
+    background-color: #1e1e1e;
+}
+
+.container .header p {
+    font-size: 16px;
+    color: #e1e1e1;
+}
+.container .header p a,
+.container .header p a:visited,
+.container .header p a:active,
+.container .header p a:hover {
+    color: #e1e1e1;
+}
+
+.container .header #titulo {
+    font-size: 48px;
+    color: slateblue;
+}
+
+.container .header .italico {
+    font-style: italic;
+}
+
+.container .header .negrito {
+    font-weight: bolder;
+}
+
+.container .header .lista {
+    list-style-type: square;
+    font-size: 15px;
+    color: crimson;
+    text-transform: capitalize;
+}
+
+.formulario {
+    width: 1000px;
+}
+
+.formulario label {
+    display: inline-table;
+    width: 15%;
+    color: #a1a1a1;
+}
+
+.formulario .op-radio {
+    color: #fff;
+}
+
+.formulario input,
+.formulario textarea {
+    background-color: #a1a1a1;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 3px #a0a0a0);
+}
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+    color: white;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.formulario .caixaTexto {
+    width: 300px;
+}
+
+@media screen and (max-width: 680px) {
+    .formulario {
+        width: 100%;
+    }
+    .formulario label {
+        display: block;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .formulario input {
+        margin: 0px 20px;
+        width: 70%;
+    }
+
+    .formulario .caixaTexto {
+        width: 80%;
+    }
+}
