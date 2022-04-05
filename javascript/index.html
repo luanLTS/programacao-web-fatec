@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <h1>Javascript</h1>
+    <form action="">
+        <label for="n1">N1</label>
+        <input type="text" id="n1" /><br />
+        <label for="n2">N2</label>
+        <input type="text" id="n2" /><br />
+        <input type="button" value="Media" onclick="media()"><br /><br />
+        <input type="text" id="resultado" disabled="true">
+    </form>
+
+    <script>
+        function media() {
+
+            if (isNaN(n1.value) || n1.value == "") {
+                alert("Infome somente numeros para n1!");
+                n1.value = "";
+                n1.focus();
+                return;
+            }
+
+            if (isNaN(n2.value) || n2.value == "") {
+                alert("Infome somente numeros para n2!");
+                n2.value = "";
+                n2.focus();
+                return;
+            }
+
+            var a = parseFloat(n1.value);
+            var b = parseFloat(n2.value);
+            var c = (a + b) / 2;
+            resultado.value = c;
+        }
+
+    </script>
+</body>
+
+</html>
