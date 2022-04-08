@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!--
+        Luan Luiz Teixeira Da Silva RA 2040482022002
+        ADS Vespertino
+    -->
+    <meta name="description" content="Atividade 02 programação web sobre tabelas" />
+    <meta name="keywords" content="html, tabelas, fatec ipiranga" />
+    <meta charset="UTF-8">
+    <title>Validação Formulário</title>
+    <link rel="stylesheet" href="./assets/css/styleAtv04.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="header">
+                <h1 id="titulo">Contato</h1>
+                <p class="italico">Seja bem vindo, preencha o <span class="negrito">formlário</span> abaixo para:</p>
+                <ul class="lista">
+                    <li>duvidas</li>
+                    <li>sugestões</li>
+                    <li>criticas</li>
+                    <li>Orçamentos</li>
+                </ul>
+                <p>Caso queria ver nossos produtos, clique <a href="#">aqui</a></p>
+            </div>
+            <form class="formulario">
+                <label for="txtNome">Nome:</label><input type="text" required id="txtNome" name="txtNome"
+                    placeholder="digite seu nome"><br />
+                <label for="txtEmail">E-mail:</label> <input type="text" required id="txtEmail" name="txtEmail"
+                    placeholder="digite seu email"><br />
+                <label for="numTelefone">Telefone:</label><input type="text" id="numTelefone" name="numTelefone"
+                    placeholder="digite seu telefone" max="11" title="Fone: 99999-9999" /><br />
+                <label for="txtNome">Assunto:</label> <select name="opAssunto" id="opAssunto">
+                    <option value="1" selected>Duvidas</option>
+                    <option value="2">sugestões</option>
+                    <option value="3">criticas</option>
+                    <option value="4">Orçamentos</option>
+                </select><br />
+                <label>Deseja receber uma copia deste e-mail:
+            </form></label>
+            <input type="radio" name="opS" id="opS" value="Sim" /> <span class="op-radio">Sim</span>
+            <input type="radio" name="opS" id="opN" value="Não" /> <span class="op-radio">Não</span><br />
+            <label for="txtNome">Mensagem:</label> <textarea class="caixaTexto" placeholder="digite sua mensagem"
+                name="txtMensagem" id="txtMensagem" cols="50" rows="7"></textarea><br />
+            <input type="button" onclick="validarCampos()" value="Enviar" id="btnEnviar" name="btnEnviar">
+            </form>
+        </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
